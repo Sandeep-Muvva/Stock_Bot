@@ -14,8 +14,8 @@ server.use(bodyParser.json());
 server.get('/',function(req,res){
 	res.send("Hi i am chatboting")
 })
-setInterval(function(){
-	http.get("http://damp-dawn-46880.herokuapp.com");},300000);
+// setInterval(function(){
+// 	http.get("http://damp-dawn-46880.herokuapp.com");},300000);
 
 server.post('/NODECODE',function(req,res){
 
