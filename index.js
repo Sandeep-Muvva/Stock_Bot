@@ -11,8 +11,9 @@ server.set('port',(process.env.PORT||5002))
 
 server.use(bodyParser.urlencoded({extended:false}))
 server.use(bodyParser.json());
+server.use(express.static(__dirname));
 server.get('/',function(req,res){
-	res.send("Hi i am chatboting")
+	res.render('/index.html');
 })
 // setInterval(function(){
 // 	http.get("http://damp-dawn-46880.herokuapp.com");},300000);
